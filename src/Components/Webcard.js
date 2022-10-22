@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import Mobilecard from './Mobilecard';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const images = [<Mobilecard />, <Mobilecard />, <Mobilecard />, <Mobilecard />, <Mobilecard />];
+const images = [<Mobilecard value="Collect Now"/>, <Mobilecard value="Collect Now" />, <Mobilecard value="Collect Now" />, <Mobilecard value="Collect Now" />, <Mobilecard value="Collect Now" />];
 const Webcard = () => {
     const [imagesIndex, setImagesIndex] = useState(0);
     const settings1 = {

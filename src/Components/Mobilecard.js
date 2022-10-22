@@ -1,6 +1,6 @@
 import React from 'react'
 import img1 from "../images/nft1.png";
-const Mobilecard = () => {
+const Mobilecard = (props) => {
     return (
         <div className="cards">
             <div className="border-[0px] bordercolor md:w-[23vw] w-[38vw]">
@@ -37,7 +37,7 @@ const Mobilecard = () => {
                         </div>
                     </div>
                     <div className="w-[100%]">
-                        <button className="w-[100%] bg-blue-600 rounded-full pb-[5px] ">Collect Now</button>
+                        <button className="w-[100%] bg-blue-600 rounded-full pb-[5px] capitalize font-bold">{props.value}</button>
                     </div>
                 </div>
             </div>
