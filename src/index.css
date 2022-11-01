@@ -1,20 +1,21 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('http://fonts.cdnfonts.com/css/clash-display');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("http://fonts.cdnfonts.com/css/clash-display");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
-} 
+  font-family: "Poppins", sans-serif;
+}
 
-html,body{
-  scroll-behavior: smooth; 
+html,
+body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 .specialfont {
-  font-family: 'Clash Display', sans-serif;
+  font-family: "Clash Display", sans-serif;
 }
 
 .NavbarItems {
@@ -33,14 +34,19 @@ html,body{
 
 .mytext {
   color: #50a153;
-  background-image: -webkit-linear-gradient(0deg, #50a153 22%, #ffffff 42%, #a061ed 73%);
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #50a153 22%,
+    #ffffff 42%,
+    #a061ed 73%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .transform-img {
-  outline: 3px solid rgba(255, 255, 255, .75);
+  outline: 3px solid rgba(255, 255, 255, 0.75);
   border-radius: 16.058px;
   transform: matrix(0.98, 0, -0.19, 1, 0, 0);
   position: relative;
@@ -67,7 +73,13 @@ html,body{
 }
 
 .bordercolor {
-  border-image: -webkit-linear-gradient(0deg, #50a153 22%, #ffffff 42%, #a061ed 73%) 20;
+  border-image: -webkit-linear-gradient(
+      0deg,
+      #50a153 22%,
+      #ffffff 42%,
+      #a061ed 73%
+    )
+    20;
 }
 
 .bgcolor {
@@ -77,7 +89,7 @@ html,body{
 .slide {
   transform: scale(0.5);
   transition: transform 300ms;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .activeSlide {
@@ -89,11 +101,18 @@ html,body{
   display: none;
 }
 
-
 .glasseffect {
   background: rgba(255, 255, 255, 0.04);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
